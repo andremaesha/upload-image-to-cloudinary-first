@@ -14,8 +14,8 @@ cloudinary.config({
 cloudinary.v2.uploader.upload(
     path.join(__dirname, "../images/login-bg.jpg"),
     {
-        use_filename: true,
-        unique_filename: false,
+        folder: "avatars",
+        width: 150,
     },
     (error, result) => {
         if (!error) {
